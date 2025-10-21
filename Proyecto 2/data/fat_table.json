@@ -1,0 +1,59 @@
+{
+  "Mono nono": {
+    "filename": "Mono nono",
+    "initial_block": "c1238387-e41c-4052-833b-58cb5ca595d3",
+    "in_recycle_bin": false,
+    "total_chars": 4,
+    "creation_date": "2025-10-21T16:13:28.313450",
+    "modification_date": "2025-10-21T16:13:28.313450",
+    "deletion_date": null,
+    "owner": "admin",
+    "is_binary": false,
+    "is_large_file": false,
+    "permissions": {
+      "admin": [
+        "read",
+        "write"
+      ]
+    }
+  },
+  "Kilo": {
+    "filename": "Kilo",
+    "initial_block": "babeb65e-f3f1-4d8a-a096-2cd13ead5126",
+    "in_recycle_bin": false,
+    "total_chars": 9,
+    "creation_date": "2025-10-21T17:01:09.962073",
+    "modification_date": "2025-10-21T17:01:09.962073",
+    "deletion_date": null,
+    "owner": "admin",
+    "is_binary": false,
+    "is_large_file": false,
+    "permissions": {
+      "admin": [
+        "read",
+        "write"
+      ],
+      "Mario": [
+        "read"
+      ]
+    }
+  },
+  "Lorena": {
+    "filename": "Lorena",
+    "initial_block": "955ea368-132c-446e-a23c-e896f695b976",
+    "in_recycle_bin": false,
+    "total_chars": 6,
+    "creation_date": "2025-10-21T17:15:15.626226",
+    "modification_date": "2025-10-21T17:15:15.626226",
+    "deletion_date": null,
+    "owner": "Mario",
+    "is_binary": false,
+    "is_large_file": false,
+    "permissions": {
+      "Mario": [
+        "read",
+        "write"
+      ]
+    }
+  }
+}
