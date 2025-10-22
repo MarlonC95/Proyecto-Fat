@@ -310,8 +310,11 @@ class FATFileSystemGUI(ctk.CTk):
                 try:
                     file_size = os.path.getsize(file_path)
                     
-                    if file_size > self.system.max_file_size:
-                        self.after(0, lambda: messagebox.showerror("Error", "El archivo es demasiado grande"))
+                    # Límite de archivo: 10MB
+                    max_file_size = 10 * 1024 * 1024  # 10 MB
+                    if file_size > max_file_size:
+                        self.after(0, lambda: messagebox.showerror("Error", 
+                            f"El archivo es demasiado grande. Tamaño máximo: 10MB. Tu archivo: {file_size/1024/1024:.1f}MB"))
                         return
                     
                     with open(file_path, 'rb') as file:
@@ -324,14 +327,15 @@ class FATFileSystemGUI(ctk.CTk):
                         self.after(0, lambda: messagebox.showinfo("Éxito", f"Archivo '{filename}' subido correctamente"))
                         self.after(0, self.update_file_list)
                     else:
-                        self.after(0, lambda: messagebox.showerror("Error", "No se pudo subir el archivo"))
+                        self.after(0, lambda: messagebox.showerror("Error", "No se pudo subir el archivo (¿ya existe?)"))
                         
-                except Exception:
-                    self.after(0, lambda: messagebox.showerror("Error", "No se pudo subir el archivo"))
+                except Exception as e:
+                    messagebox.showerror("Error", f"No se pudo subir el archivo: {str(e)}")
                 finally:
                     self.after(0, self.hide_loading)
             
             threading.Thread(target=upload_thread, daemon=True).start()
+        
     
     def show_loading(self, message="Cargando..."):
         self.loading = True

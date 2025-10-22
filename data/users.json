@@ -8,5 +8,10 @@
     "password": "Mario",
     "role": "user",
     "created_at": "2025-10-21T17:13:05.866950"
+  },
+  "Daniel": {
+    "password": "Mike",
+    "role": "user",
+    "created_at": "2025-10-21T18:02:29.568103"
   }
 }

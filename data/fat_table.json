@@ -1,22 +1,4 @@
 {
-  "Mono nono": {
-    "filename": "Mono nono",
-    "initial_block": "c1238387-e41c-4052-833b-58cb5ca595d3",
-    "in_recycle_bin": false,
-    "total_chars": 4,
-    "creation_date": "2025-10-21T16:13:28.313450",
-    "modification_date": "2025-10-21T16:13:28.313450",
-    "deletion_date": null,
-    "owner": "admin",
-    "is_binary": false,
-    "is_large_file": false,
-    "permissions": {
-      "admin": [
-        "read",
-        "write"
-      ]
-    }
-  },
   "Kilo": {
     "filename": "Kilo",
     "initial_block": "babeb65e-f3f1-4d8a-a096-2cd13ead5126",
@@ -51,6 +33,51 @@
     "is_large_file": false,
     "permissions": {
       "Mario": [
+        "read",
+        "write"
+      ],
+      "admin": [
+        "read"
+      ]
+    }
+  },
+  "Receta": {
+    "filename": "Receta",
+    "initial_block": "a8d5a356-44e0-413b-a8c1-3b0723dcd5e6",
+    "in_recycle_bin": false,
+    "total_chars": 34,
+    "creation_date": "2025-10-21T17:57:03.460799",
+    "modification_date": "2025-10-21T18:06:20.103686",
+    "deletion_date": null,
+    "owner": "admin",
+    "is_binary": false,
+    "is_large_file": false,
+    "permissions": {
+      "admin": [
+        "read",
+        "write"
+      ],
+      "Mario": [
+        "read"
+      ],
+      "Daniel": [
+        "read"
+      ]
+    }
+  },
+  "blue-bmp-16-bit.bmp": {
+    "filename": "blue-bmp-16-bit.bmp",
+    "file_path": "data\\large_files\\blue-bmp-16-bit.bmp.bin",
+    "in_recycle_bin": false,
+    "total_chars": 786488,
+    "creation_date": "2025-10-21T17:59:33.657885",
+    "modification_date": "2025-10-21T17:59:33.657885",
+    "deletion_date": null,
+    "owner": "admin",
+    "is_binary": true,
+    "is_large_file": true,
+    "permissions": {
+      "admin": [
         "read",
         "write"
       ]
